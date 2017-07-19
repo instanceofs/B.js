@@ -39,40 +39,6 @@ gulp.task("seed", function () {
 
 
 
-// PATH.CONCAT={
-//     DGG_BASE_JS:['src/js/base/dgg.js','build/js/jquery-1.10.2.min.js','src/js/base/dgg-common.js']
-// }
-//
-// gulp.task('script-base', function (){
-//     gulp.src(PATH.CONCAT.DGG_BASE_JS)
-//         .pipe(plugins.concat('dgg-0.0.1.js'))
-//         // .pipe(gulp.dest(destPath.script));
-//         .pipe(plugins.rename({suffix: '.min'}))
-//         .pipe(plugins.uglify({preserveComments: 'some'}))
-//         .pipe(plugins.header(banner, {pkg: pkg}))
-//         .pipe(gulp.dest(PATH.DEST.JS+'/base'));
-// });
-
-
-// gulp.task("js", function (){
-//     gulp.src(PATH.SRC.JS)
-//         .pipe(plugins.jshint())
-//         .pipe(plugins.jshint.reporter('default', {verbose: true}))
-//         .pipe(plugins.jshint.reporter('fail'))
-//         .pipe(plugins.uglify({mangle: true}))
-//         .pipe(plugins.rename({suffix: '.min'}))
-//         .pipe(plugins.header(banner, {pkg: pkg}))
-//         .pipe(gulp.dest(PATH.DEST.JS));
-//     gulp.src(PATH.SRC.PLUGS_JS)
-//         .pipe(plugins.jshint())
-//         .pipe(plugins.jshint.reporter('default', {verbose: true}))
-//         .pipe(plugins.jshint.reporter('fail'))
-//         .pipe(plugins.uglify({mangle: true}))
-//         .pipe(plugins.rename({suffix: '.min'}))
-//         .pipe(plugins.header(banner, {pkg: pkg}))
-//         .pipe(gulp.dest(PATH.DEST.PLUGS));
-// })
-
 gulp.task('watch', function (){
     gulp.watch([PATH.SRC.JS], ['seed']);
 });

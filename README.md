@@ -13,7 +13,7 @@ B.JS
 > * 整理知识，学习笔记
 > * 发布日记，杂文，所见所想
 
-![cmd-markdown-logo](http://web.xn--w0sz4as21fs7k.com/wp-content/uploads/2016/03/hs-xiu-4.png)
+![cmd-markdown-logo](http://web.xn--w0sz4as21fs7k.com/wp-content/uploads/2017/07/BJS.gif)
 
 除了您现在看到的这个 github，您还可以前往以下网址：[柏小白博客](http://web.xn--w0sz4as21fs7k.com/)
 

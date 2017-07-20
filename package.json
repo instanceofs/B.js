@@ -1,7 +1,26 @@
 {
-  "name": "BaiXiaoBai.B.JS",
+  "name": "bai-b.js",
   "version": "0.0.1",
-  "description": "Gulp Js",
+  "qq": "360708355@qq.com",
+  "description": "gulp b.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/360708355/B.js.git"
+  },
+  "keywords": [
+    "b.js",
+    "bai"
+  ],
+  "author": "note",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/360708355/B.js/issues"
+  },
+  "homepage": "https://github.com/360708355/B.js#readme",
   "devDependencies": {
     "gulp-load-plugins": "~1.0.0",
     "gulp": "~3.9.0",

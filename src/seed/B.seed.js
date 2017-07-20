@@ -190,6 +190,6 @@
         WARN: 'warn',
         ERROR: 'error'
     };
-    return 'B' in self || ( self['B'] = B);
+    'B' in self || ( self['B'] = B);
 
 }).call(this);

@@ -53,7 +53,7 @@
             s = [];
         /**
          * UA
-         * @class BAI.UA
+         * @class B.UA
          * @singleton
          */
         var UA = {
@@ -345,7 +345,7 @@
         return UA;
     }
 
-    var UA = BAI.UA = getDescriptorFromUserAgent(ua);
+    var UA = B.UA = getDescriptorFromUserAgent(ua);
 
     // nodejs
     if(typeof process === 'object'){

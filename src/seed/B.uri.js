@@ -8,15 +8,32 @@
     B._mix(B, {
         /**
          * 获取页面参数
-         * @param uri
+         * @param {String} uri
          * @returns {Array}
          */
         uri: function (url){
           var url = (url ? url: location.href);
-          return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(function(e, r) {
+          return (B.urlDecode(url).match(/([^?=&]+)(=([^&]*))/g) || []).reduce(function(e, r) {
             return e[r.slice(0, r.indexOf("="))] = r.slice(r.indexOf("=") + 1), e;
           }, {});
         },
+      /**
+       * url编码
+       * @param  url
+       * @return {String} 已编码的url部分字符串
+       */
+      urlEncode: function(b) {
+        return encodeURIComponent(String(b))
+      },
+      /**
+       * url解码
+       * @param  url
+       * @param {String} url 这是url的一部分被解码.
+       * @return {String} 解码的url部分字符串
+       */
+      urlDecode: function(url) {
+        return decodeURIComponent(url.replace(/\+/g, " "))
+      },
         /**
          * cookie操作
          */

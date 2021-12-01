@@ -11,23 +11,11 @@
          * @param uri
          * @returns {Array}
          */
-        uri: function (uri){
-            var q = [], qs;
-            qs = (uri ? uri + "" : location.search);
-            if(qs.indexOf('?') >= 0){
-                qs = qs.substring(1);
-                qs = qs.substring(1);
-            }
-            if(qs){
-                qs = qs.split('&');
-            }
-            if(qs.length > 0){
-                for (var i = 0; i < qs.length; i++) {
-                    var qt = qs[i].split('=');
-                    q[qt[0]] = decodeURIComponent(qt[1]);
-                }
-            }
-            return q;
+        uri: function (url){
+          var url = (url ? url: location.href);
+          return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(function(e, r) {
+            return e[r.slice(0, r.indexOf("="))] = r.slice(r.indexOf("=") + 1), e;
+          }, {});
         },
         /**
          * cookie操作
